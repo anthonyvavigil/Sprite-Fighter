@@ -1,0 +1,52 @@
+readme
+
+
+CONTROLS
+
+W OR UP ARROW       -- MOVE FORWARD
+A OR LEFT ARROW     -- MOVE LEFT
+S OR DOWN ARROW     -- MOVE DOWN
+D OR DOWN ARROW     -- MOVE RIGHT 
+
+SHIFT OR RIGHT-CTRL -- SPRINT
+
+
+LEVEL ID SYSTEM
+
+levId corresponds to certain lines of a game file
+		 * level save file is organized as
+		 * lv(number)(number) as level id, followed by two colons if the level id is single-digit, or one if it is double-digit
+		 * 
+		 * the first number is the row it is in
+		 * 
+		 * the second number is the column
+		 *
+		 * so lv24 would be 2 down, four to the right
+		 * 
+		 * there are 4 columns and five rows
+		 * 
+		 * then, a series of four zeroes and ones, representing doors 1-4
+		 * 0 represents false, 1 represents true
+		 * a " "
+		 * then, a series of five zeroes and ones, representing items 1-5
+		 * another " "
+		 * then, a four-digit String representing the file name of the .png file for the level background
+		 * 
+		 * IF A NUMBER IN THE FIVE-DIGIT PORTION IS 2, THAT MEANS THE ITEM SPAWN IS RANDOM
+		 * 
+		 * example line: lv34:0110 11000 tech
+		 * 
+		 * this means the level is at grid position (3, 4)
+		 
+		 
+BOT ID SYSTEM
+		
+	 * FIRST FOUR LETTERS ARE A STRING REPRESENTING BOT TYPE
+	 * 
+	 * THEN A COLON
+	 * 
+	 * THEN A TWO-DIGIT NUMBER REPRESENTING THE STARTING HEALTH OF THE CHARACTER
+	 * 
+	 * THEN A TWO-DIGIT NUMBER REPRESENTING THE DAMAGE PER SECOND OF THE CHARACTER
+	 * 
+	 * THEN A FOUR-LETTER STRING REPRESENTING FILE NAME SANS .png

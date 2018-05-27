@@ -1,0 +1,5 @@
+speed boost:25:25:spdboost
+health increase (1.1x):25:25:hp11
+health increase (1.2x):25:25:hp12
+key:25:25:key
+damage increase (1.1x):25:25:dmg11
